@@ -11,6 +11,8 @@ function combineUsers(...args){
     combinedObject.users = [...combinedObject.users, ...currentArray]
   
   }
+  //Get today's date
+  combinedObject.merge_date = new Date().toString("M/d/yyyy");
 
 
 }
