@@ -4,12 +4,13 @@ function combineUsers(...args){
   let combinedObject = {
     users: []
   }
-  //Loop through args
+  //Loop through args and merge arrays
   for (let i = 0; i < args.length; i++){
     let currentArray = args[i];
     consoele.log(`Array at index ${i} : ${currentArray}`);
-  }
+    combinedObject.users = [...combinedObject.users, ...currentArray]
   
+  }
 
 
 }
